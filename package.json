@@ -25,7 +25,7 @@
   "homepage": "https://github.com/imjuni/divideconfig#readme",
   "dependencies": {
     "co": "^4.6.0",
-    "stringaccess": "file:///Users/bjlee/Project/personal/github/stringaccess",
+    "stringaccess": "0.0.8",
     "strip-json-comments": "^2.0.1"
   },
   "devDependencies": {
