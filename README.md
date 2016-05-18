@@ -57,6 +57,17 @@ application execute.
 * Before load to execute strip-json-comments, so your write comment in configuration. It so convenient.
 * You can set default configuration. If you set development, first loading development configuration and
  overwrite configuration in preloaded configuration.
+ 
+# Example
+See configuration example, in config/development_default_comon or config/production_default_development.
+
+```
+var path = require('path');
+var loader = require('../lib/Loader');
+var configuration = loader.loading(path.join(__dirname, '../config/production_default_development'), 'config.json');
+
+console.log(configuration);
+```
 
 # More Help?
-See example in config directory. I created example configuration
+See example in config directory and test/loader.js. I create example configuration and test case.
