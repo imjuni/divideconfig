@@ -1,13 +1,19 @@
 DivideConfig
 ============
 
+# Installation
+* Npm
+```
+npm install divideconfig --save
+```
+
 # Introduction
 DivideConfig is smart loader for your application configuration. DivideConfig is load by mode 
 configuration. Mode is to separate for distribution that are development, stage, production. 
 See below configuration architecture.
 
-```
 # Configuration Tree Architecture
+```
 config/
   config.json
   development.config.json
@@ -25,15 +31,18 @@ config/
     +- development.oauth2.config.json
     +- stage.oauth2.config.json
     +- production.oauth2.config.json
-       
+```       
    
-# config.json
+## config.json
+```
 {
   "mode": "development",
   "default: "development"
 }
+```
 
-# Json Architecture
+## Load complete after Json architecture
+```
 {
   "database": {
     ... your configuration
@@ -57,9 +66,14 @@ application execute.
 * Before load to execute strip-json-comments, so your write comment in configuration. It so convenient.
 * You can set default configuration. If you set development, first loading development configuration and
  overwrite configuration in preloaded configuration.
+* Support hjson
  
 # Example
-See configuration example, in config/development_default_comon or config/production_default_development.
+See configuration example,
+
+* config/development_default_comon
+* config/production_default_development
+* config/production_default_development_hjson
 
 ```
 var path = require('path');

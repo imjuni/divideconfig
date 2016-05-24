@@ -1,0 +1,6 @@
+{
+  redis: {
+    user: hulk
+    pw: robertBruceBanner
+  }
+}

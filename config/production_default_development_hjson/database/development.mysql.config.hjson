@@ -1,0 +1,6 @@
+{
+  "host": "111.112.113.114",
+  "port": 3306,
+  "user": "thor",
+  "pw": "thorOdinson"
+}

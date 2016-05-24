@@ -1,0 +1,6 @@
+{
+  # hjson can write comment
+
+  mode: "production", // No quote in key and c-style single line comment, can use it.
+  default: "development"
+}
