@@ -1,0 +1,8 @@
+{
+  "redis": {
+    "host": "123.123.123.123",
+    "port": 4444,
+    "user": "blackwidow",
+    "pw": "Natalia \"Natasha\" AlianovnaRomanova // No escape"
+  }
+}

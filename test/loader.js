@@ -49,7 +49,7 @@ describe('loader', function () {
   });
 
   it('loader_walk_production_default_development', function () {
-    var configuration = loader.loading(path.join(__dirname, '../config/production_default_development_hjson'), 'config.hjson', 'hjson');
+    var configuration = loader.loading(path.join(__dirname, '../config/production_default_development_hjson'), 'config.hjson');
 
     configuration.mode.should.eql('production');
     configuration.host.should.eql('localhost');

@@ -1,9 +1,0 @@
-{
-  redis: {
-    // No comma at the end
-    host: "123.123.123.123"  # If you wanna comment at the end? You need to quote value
-    port: 4444
-    user: blackwidow
-    pw: Natalia "Natasha" AlianovnaRomanova // No escape
-  }
-}
