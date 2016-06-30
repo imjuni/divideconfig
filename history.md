@@ -16,3 +16,6 @@
    
 # 0.3.0
 * Add new feature, support yaml
+
+# 0.3.1
+* Remove config example file on npm package
