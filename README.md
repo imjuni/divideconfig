@@ -66,7 +66,7 @@ application execute.
 * Before load to execute strip-json-comments, so your write comment in configuration. It so convenient.
 * You can set default configuration. If you set development, first loading development configuration and
  overwrite configuration in preloaded configuration.
-* Support hjson
+* Support hjson, yaml
  
 # Example
 See configuration example,
@@ -74,6 +74,7 @@ See configuration example,
 * config/development_default_comon
 * config/production_default_development
 * config/production_default_development_hjson
+* config/production_default_development_yaml
 
 ```
 var path = require('path');

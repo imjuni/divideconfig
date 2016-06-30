@@ -1,6 +1,6 @@
 {
   "name": "divideconfig",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "engines": {
     "node": ">=4.0.x"
   },
@@ -26,6 +26,7 @@
   "dependencies": {
     "co": "^4.6.0",
     "hjson": "^1.8.4",
+    "js-yaml": "^3.6.1",
     "stringaccess": "0.0.8",
     "strip-json-comments": "^2.0.1"
   },

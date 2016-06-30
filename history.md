@@ -12,4 +12,7 @@
 # 0.2.1
 * Complex loading feature
   * hjson, json all file loading on config directory (By the loading rule)
-  * See production_default_development_hjson, I change database/development.config.hjson to database/development.config.json 
+  * See production_default_development_hjson, I change database/development.config.hjson to database/development.config.json
+   
+# 0.3.0
+* Add new feature, support yaml
