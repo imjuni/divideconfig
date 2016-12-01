@@ -6,7 +6,7 @@
 
 # 0.2.0
 * New configuration format added
-  * support hjson (https://hjson.org/)
+  * support [hjson](https://hjson.org/)
   * Add new configuration example, production_default_development_hjson
 
 # 0.2.1
@@ -19,3 +19,9 @@
 
 # 0.3.1
 * Remove config example file on npm package
+
+# 0.4.0
+* Change Node.js interpreter version
+* Refactoring, Using by javascript class
+* Support [Hocon](https://github.com/typesafehub/config)
+  * Very impressive change, because it make to possible same configuration with Java, Scala project 

@@ -66,7 +66,12 @@ application execute.
 * Before load to execute strip-json-comments, so your write comment in configuration. It so convenient.
 * You can set default configuration. If you set development, first loading development configuration and
  overwrite configuration in preloaded configuration.
-* Support hjson, yaml
+* Support hjson, yaml, HOCON
+  * HOCON configuration is make share configuration file with Java, Scala project
+  * JSON: .json
+  * YAML: .yaml, .yml
+  * HJSON: .hjson
+  * HOCON: .conf, .hocon
  
 # Example
 See configuration example,
@@ -75,6 +80,7 @@ See configuration example,
 * config/production_default_development
 * config/production_default_development_hjson
 * config/production_default_development_yaml
+* config/production_default_development_hocon
 
 ```
 var path = require('path');
@@ -83,6 +89,14 @@ var configuration = loader.loading(path.join(__dirname, '../config/production_de
 
 console.log(configuration);
 ```
+
+# Warning
+* Javascript hoconfig-js library cannot parse specific comment(start with //). So you can use only start with # comment. Remind, you use only start with # comment.
+ 
+# Contribution guide
+* DivideConfig follow Airbnb Javascript guide.
+  * Commit before, execute below command
+  * npm run lint
 
 # More Help?
 See example in config directory and test/loader.js. I create example configuration and test case.

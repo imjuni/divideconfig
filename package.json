@@ -1,14 +1,15 @@
 {
   "name": "divideconfig",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "engines": {
-    "node": ">=4.0.x"
+    "node": ">=7.x.x"
   },
   "description": "Smart configuration loader by distribution configuration",
   "main": "index.js",
   "scripts": {
     "coverage": "istanbul cover _mocha -- -R spec",
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "./node_modules/.bin/eslint lib/**"
   },
   "repository": {
     "type": "git",
@@ -26,11 +27,17 @@
   "dependencies": {
     "co": "^4.6.0",
     "hjson": "^1.8.4",
+    "hoconfig-js": "^0.1.12",
     "js-yaml": "^3.6.1",
     "stringaccess": "0.0.8",
     "strip-json-comments": "^2.0.1"
   },
   "devDependencies": {
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1"
   }
 }
