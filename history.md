@@ -25,3 +25,9 @@
 * Refactoring, Using by javascript class
 * Support [Hocon](https://github.com/typesafehub/config)
   * Very impressive change, because it make to possible same configuration with Java, Scala project 
+  
+# 0.4.1
+* Add new feature, loader have new parameter userMode
+  * If you set userMode, divideconfig ignore mode variable in config.json
+* Refactoring code for eslint(use airbnb rule)
+* Add lint, lint:watch command

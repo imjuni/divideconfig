@@ -1,20 +1,23 @@
 DivideConfig
-============
-
-https://img.shields.io/travis/imjuni/divideconfig.svg
-
-# Installation
-* Npm
-```
-npm install divideconfig --save
-```
+----
 
 # Introduction
-DivideConfig is smart loader for your application configuration. DivideConfig is load by mode 
-configuration. Mode is to separate for distribution that are development, stage, production. 
-See below configuration architecture.
+DivideConfig is smart configuration loader for your application. DivideConfig development would to
+share another application. For example, hocon configuration help to share configuration with Scala
+or Java application. Furthermore, you can divide configuration various mode. For example, develop, 
+stage, production, etc... That is very helpful for your development.
 
-# Configuration Tree Architecture
+DivideConfig is loading all configuration file in config directory, that is starts with
+mode prefix and xxxx.config.json file. If you set development mode, load all files that 
+is start with "development". For example, "development.database.config.json" and 
+"development.oauth2.config.json".
+
+All loading task is to execute synchronous. So you try to load configuration before your
+application execute.
+
+Enjoy it!!
+
+## Configuration Tree Architecture
 ```
 config/
   config.json
@@ -35,7 +38,7 @@ config/
     +- production.oauth2.config.json
 ```       
    
-## config.json
+### config.json
 ```
 {
   "mode": "development",
@@ -43,7 +46,7 @@ config/
 }
 ```
 
-## Load complete after Json architecture
+### Load complete after Json architecture
 ```
 {
   "database": {
@@ -55,13 +58,11 @@ config/
 }
 ```
 
-DivideConfig is loading all configuration file in config directory, that is starts with
-mode prefix and xxxx.config.json file. If you set development mode, load all files that 
-is start with "development". For example, "development.database.config.json" and 
-"development.oauth2.config.json".
-
-All loading task is to execute synchronous. So you try to load configuration before your
-application execute.
+# Installation
+* Npm
+```
+npm install divideconfig --save
+```
 
 # Why DivideConfig?
 * Separate configuration, production and development, stage
@@ -98,7 +99,7 @@ console.log(configuration);
 # Contribution guide
 * DivideConfig follow Airbnb Javascript guide.
   * Commit before, execute below command
-  * npm run lint
+    * npm run lint
 
 # More Help?
 See example in config directory and test/loader.js. I create example configuration and test case.
