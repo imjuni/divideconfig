@@ -59,7 +59,7 @@ config/
 ```
 
 # Installation
-* Npm
+* npm
 ```
 npm install divideconfig --save
 ```

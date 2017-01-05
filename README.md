@@ -4,7 +4,7 @@ DivideConfig
 [![Build Status](https://travis-ci.org/imjuni/divideconfig.svg?branch=master)](https://travis-ci.org/imjuni/divideconfig) [![Coverage Status](https://coveralls.io/repos/imjuni/divideconfig/badge.svg?branch=master)](https://coveralls.io/r/imjuni/divideconfig?branch=master)
 
 # Installation
-* Npm
+* npm
 ```
 npm install divideconfig --save
 ```

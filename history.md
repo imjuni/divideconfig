@@ -37,3 +37,6 @@
 
 # 0.4.3
 * Add Coveralls
+
+# 0.4.4
+* Change README
