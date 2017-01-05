@@ -1,7 +1,7 @@
 DivideConfig
 ============
 
-https://img.shields.io/travis/imjuni/divideconfig.svg
+[![Build Status](https://travis-ci.org/imjuni/divideconfig.svg?branch=master)](https://travis-ci.org/imjuni/divideconfig)
 
 # Installation
 * Npm
