@@ -1,7 +1,7 @@
 DivideConfig
 ============
 
-[![Build Status](https://travis-ci.org/imjuni/divideconfig.svg?branch=master)](https://travis-ci.org/imjuni/divideconfig)
+[![Build Status](https://travis-ci.org/imjuni/divideconfig.svg?branch=master)](https://travis-ci.org/imjuni/divideconfig) [![Coverage Status](https://coveralls.io/repos/<account>/<repository>/badge.svg?branch=master)](https://coveralls.io/r/<account>/<repository>?branch=master)
 
 # Installation
 * Npm

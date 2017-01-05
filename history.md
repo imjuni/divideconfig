@@ -31,3 +31,9 @@
   * If you set userMode, divideconfig ignore mode variable in config.json
 * Refactoring code for eslint(use airbnb rule)
 * Add lint, lint:watch command
+
+# 0.4.2
+* Add Travis CI
+
+# 0.4.3
+* Add Coveralls

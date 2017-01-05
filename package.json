@@ -1,6 +1,6 @@
 {
   "name": "divideconfig",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "engines": {
     "node": ">=7.x.x"
   },
@@ -8,6 +8,7 @@
   "main": "index.js",
   "scripts": {
     "coverage": "istanbul cover _mocha -- -R spec",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "test": "./node_modules/.bin/mocha",
     "lint": "./node_modules/.bin/esw lib/**",
     "lint:watch": "./node_modules/.bin/esw -w lib/**"
@@ -35,6 +36,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "coveralls": "^2.11.15",
     "eslint": "^3.11.1",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
